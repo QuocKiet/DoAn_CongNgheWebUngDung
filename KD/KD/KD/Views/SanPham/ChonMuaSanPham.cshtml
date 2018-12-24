@@ -1,0 +1,8 @@
+﻿@using (Html.BeginForm("ThemSanPham", "GioHang", FormMethod.Post, htmlAttributes: new { style = "display:inline" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.Hidden("id", (int)Model)
+    <button type="submit" class="btn btn-danger muangay">
+        Mua ngay
+    </button>
+}

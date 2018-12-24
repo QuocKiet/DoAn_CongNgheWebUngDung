@@ -1,0 +1,33 @@
+﻿<div class="container-fluid menu" style="height:70px; vertical-align:middle">
+    <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/SonyStyles/images/logo.png" alt=""></a>
+    <div class="nav navbar-nav float-xs-right">
+        <div class="nav-item loai">
+            <a class="sanpham" style="color: white; text-decoration: none" href="@Url.Action("listSanPham","SanPham")" target="_parent"><i class="fa fa-angle-double-down"></i>Sản phẩm</a>
+        </div>
+        <div class="nav-item dropdown">
+            <button class="dropbtn">
+                Loại
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                @Html.Action("MenuLoai", "DanhMucSanPham")
+            </div>
+        </div>
+        <div class="nav-item mt-0">
+            @using (Html.BeginForm("TimKiem", "SanPham", new { @class = "navbar-form", role = "search" }))
+            {
+                <div class="input-group">
+                    @Html.TextBox("textBoxTimKiem", "", htmlAttributes: new { @class = "form-control search", placeholder = "Search", style = "height:30px" })
+                    <button class="btn btn-info search" type="submit">Search</button>
+                </div>
+            }
+        </div>
+        <div class="nav-item mt-2">
+            <a href="@Url.Action("Index","GioHang")"  class="tab cart"> <i class="fa fa-shopping-cart"></i>  CART</a>
+        </div>
+        <div class="nav-item mt-2">
+            <a href="@Url.Action("Login","Login")"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+</div>

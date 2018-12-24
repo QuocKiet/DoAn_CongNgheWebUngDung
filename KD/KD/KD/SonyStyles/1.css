@@ -1,0 +1,549 @@
+*{margin: 0; padding: 0;}
+
+
+
+.pagination {
+    margin: 20px 0;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    border-radius: 0;
+    text-align: center;
+}
+
+    .pagination li{
+        float:left;
+        list-style:none;
+        
+    }
+        .pagination li a {
+            padding: 6px 12px;
+            line-height: 1.42857143;
+            text-decoration: none;
+            color: white;
+            background-color: #222534;
+            border: 1px solid #dddddd;
+        }
+
+            .pagination li a:hover,
+            .pagination li a:focus, {
+                color: #1abc9c;
+               
+            }
+
+    .pagination .active a,
+    .pagination .active a:hover,
+    .pagination .active a:focus {
+        z-index: 2;
+        color: #1abc9c;
+        background-color: #222534;
+    }
+a.navbar-brand img {
+    width: 150px;
+    display: block;
+    margin-top: -50px;
+}
+
+/*login*/
+label.control-label.col-md-2.LbDn {
+    margin: 20px;
+}
+.btn.btn-info.search {
+    color: white;
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: #222534;
+    border-color: #222534;
+}
+
+
+.nav-item :hover {
+    color: #1abc9c!important;
+}
+
+.btn.btn-info.search:hover {
+    color: #1abc9c;
+}
+
+.nav-item .cart {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+.tab.cart:hover {
+    color: #1abc9c;
+}
+.form-control.search {
+    margin-top: 5px;
+}
+/*navbar*/
+input.form-control {
+    padding: 0 .75rem;
+    line-height: 2;
+    transform: translateY(50%);
+    margin-top: -4%;
+    /* margin-right: 5px; */
+} 
+
+body{
+	overflow-x: hidden;
+	/*background-color:white;*/
+	font-family: 'Roboto Slab', serif;
+
+}
+.nav-item{
+    margin-top:20px;
+}
+
+.nav-item.dropdown {   
+    margin-top:5px;
+    /*padding-top: 5px*/
+}
+
+.menu{
+	height: 65px;
+	background-color: #222534;
+}
+
+
+.navbar.navbar-light{
+	background-color: #222534;
+	height: 65px;
+}
+
+.navbar .collapse{
+	height: 65px;
+}
+
+
+
+
+/*BANNER*/
+
+.banner{
+	display: block;
+	margin: 10px 0;
+}
+
+li.nav-item.nuttim {
+	font-size: 22px;
+/*	line-height: 22px;*/
+	cursor: pointer;
+	margin-left: 8px;
+	margin-top: 1.5%;
+	transition: 0.3s;
+	text-align: center;
+} 
+
+
+
+/*Drop Menu*/
+/*.dropContent{
+	opacity: 0;
+	visibility: hidden;
+	background-color: red;
+	position: absolute;
+	z-index: 1000;
+	bottom: -50px;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}
+*/
+.supMenu{
+	background-color: red;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top:44%;
+	left: 5px;
+	z-index: 100;
+	display: inline-block;
+	background-color: white;
+	
+}
+
+.supMenu .supRow{
+	float: left;
+	padding:0 10px;
+	list-style: none;
+	width: 100px;
+
+}
+
+.supMenu .supRow li a{
+	text-decoration: none;
+	color: gray;
+	border-bottom: 1px dotted gray;
+	padding-bottom: 5px;
+	margin-bottom: 3px;
+	display: block;	
+}
+
+.supMenu .supRow li a:hover{
+	color: #1abc9c;
+}
+
+.supMenu .supRow li:last-child a{
+	border-bottom: none;
+}
+
+
+
+.navbar-light .navbar-nav .nav-item:hover .supMenu {
+	opacity: 1;
+	visibility: visible;
+}
+
+.navbar-light .navbar-nav:nth-child(2) .nav-item .supMenu{
+	width: 480px;
+}
+
+.navbar-light .navbar-nav:nth-child(3) .nav-item .supMenu{
+	width: 240px;
+}
+
+.navbar-light .navbar-nav:nth-child(4) .nav-item .supMenu{
+	width: 100px;
+}
+
+.navbar-light .navbar-nav:nth-child(5) .nav-item .supMenu{
+	width: 100px;
+}
+
+.navbar-light .navbar-nav .nav-item .supMenu:hover{
+}
+
+/*FOOTER*/
+
+.footer .footerTop{
+	background-color: #222534;
+	color: gray;
+	padding-bottom: 10px;
+	font-size: 14px;
+
+}
+
+.footer .footerBottom{
+	background-color: #181d23;
+	padding: 10px;
+	color: #8e9da6;
+}
+
+.footer .footerTop h2.tieude{
+	font-size: 25px;
+	display: block;
+	margin: 20px 0;
+	color: #1abc9c;
+
+}
+
+.footer .footerTop .ThongTinLienLac a.hotline{
+
+	font-size: 18px;
+}
+
+.footer .footerTop .ThongTinLienLac a{
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.footer .footerTop .ThongTinHoTro a{
+	color: gray;
+	font-size: 14px;
+	display: block;
+	line-height: 25px;
+}
+
+.heThongCuaHang{
+	display: block;
+	margin-top: 5px;
+}
+
+
+/*SANPHAM*/
+.dsSanpham .motSanpham{
+	width: 222px;
+	height: 290px;
+	display: block;
+	border: 1px solid #8686867d;
+	padding: 10px 0;
+	border-radius: 2px;
+	position: relative;
+	background-color: white;
+	float: left;
+}
+
+.dsSanpham .motSanpham .motSpImg{
+	width: 220px;
+	height: 175px;
+}
+.dsSanpham .motSanpham .motSpImg img{
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+.dsSanpham .motSanpham .motSpThongtin{
+	display: block;
+	margin-top: 18px;
+	padding-left: 10px;
+}
+.tenSp{
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	margin: 10px 0;
+}
+.giaSp{
+	color: red;
+}
+
+.dsSanpham .motSanpham .thongtinCt{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	transition: 0.4s;
+	padding: 10px;
+}
+
+.dsSanpham .motSanpham .thongtinCt ul{
+	list-style: none;
+}
+
+.dsSanpham .motSanpham:hover .thongtinCt {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
+/*DEALSOCK*/
+.danhmuc .topDanhmuc{
+	height: 70px;	
+	background-color: white;
+	border: 1px solid #8686867d;
+	border-bottom: none;
+	overflow: hidden;
+}
+
+.danhmuc .topDanhmuc .tenDanhmuc{
+	display:inline-block;
+	height: 100%;
+	background-color: #f7f7f7;
+	margin-right: 100px;
+	line-height: 25px;
+	float: left;
+}
+
+.danhmuc .topDanhmuc .tenDanhmuc:before{
+	content: "";
+	width: 70px;
+	height: 100%;
+	background-color: #f7f7f7;
+	transform:translateX(50%) rotate(45deg);
+	float: right;
+}
+
+
+.danhmuc .topDanhmuc .tenDanhmuc .dtnoibat{
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 70px;
+	display: inline;
+	padding-left: 10px;
+}
+
+.left{
+	float: left;
+}
+
+.left .btn{
+	float: left;
+}
+
+.left .btn.btn-secondary {
+    background: #ccc;
+    color: white;
+    border-radius: 4px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 6%;
+}
+
+
+.breadcrumb li a{
+	color: #1abc9c;
+}
+
+.breadcrumb li.active{
+	color: gray;
+}
+
+.breadcrumb{
+	background-color: transparent;
+}
+
+
+
+/*carousel*/
+.imgSp .carousel{
+	height: 500px;
+	background-color: white;
+	/*border: 1px solid gray;*/
+}
+
+.imgSp .carousel .carousel-item img{
+	width: 500px;
+	height: 450px;
+	margin-top: 20px;
+}
+
+
+.imgSp .carousel .carousel-control{
+	background:none;
+	opacity: 0;
+	visibility: hidden;
+	color: gray;
+}
+
+.imgSp .carousel:hover .carousel-control{
+	opacity: 1;
+	visibility: visible;
+}
+
+.imgSp .carousel .carousel-indicators{
+	bottom: -10px;
+}
+
+.imgSp .carousel .carousel-indicators li.active{
+   background-color: #d0011b;
+   border-color: #d0011b;
+}
+
+.imgSp .carousel .carousel-indicators li{
+	 border: 1px solid #979797;
+	}
+
+
+.khuyenmai{
+	border: 1px solid red;
+	border-radius: 3px;
+	width: 100%;
+	padding:30px 10px;
+}
+
+.khuyenmai li{
+	color: red;
+}
+
+.khuyenmai .haikhuyenmai{
+	background-color: gray;
+}
+
+
+.muangay:hover{
+	background-color: transparent;
+	color: #d9534f;
+}
+
+.muangay{
+	margin: 10px 0;
+	width: 100%;
+}
+
+.muaTragop,.muaTragopThe{
+	width: 48%;
+}
+
+
+.muaTragop:hover,.muaTragopThe:hover{
+	background-color: white;
+	color: #5bc0de;
+}
+.muaTragopThe{
+	float: right;
+}
+
+
+.chonMau .mau{
+	width: 20%;
+	margin: 10px 0;
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    text-align: center;
+}
+
+.product div.text {
+        text-align: center;
+    }
+.product img {
+    width: 250px;
+    height: 200px
+}
+
+.product div.info {
+    border-top: 2px solid #ededed;
+}
+
+
+/*.dropdown {
+    float: left;
+    overflow: hidden;
+}*/
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/*.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

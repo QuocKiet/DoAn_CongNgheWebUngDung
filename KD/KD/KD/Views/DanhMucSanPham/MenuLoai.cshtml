@@ -1,0 +1,6 @@
+﻿@model List<KD.Models.DanhMucSanPham>
+@foreach (var item in Model)
+{
+        @Html.ActionLink(item.TenDanhMucSanPham, "SanPhamTheoLoai", "SanPham",
+           new { idL = item.IdDanhMucSanPham }, htmlAttributes: new { target = "_blank" })
+}

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SonyModelStoreContainer" CdmEntityContainer="SonyEntities">
+    <EntitySetMapping Name="ChiTietDonHangs">
+      <EntityTypeMapping TypeName="SonyModel.ChiTietDonHang">
+        <MappingFragment StoreEntitySet="ChiTietDonHang">
+          <ScalarProperty Name="IdSanPham" ColumnName="IdSanPham" />
+          <ScalarProperty Name="IdChiTietDonHang" ColumnName="IdChiTietDonHang" />
+          <ScalarProperty Name="IdDonHang" ColumnName="IdDonHang" />
+          <ScalarProperty Name="SoLuongSanPham" ColumnName="SoLuongSanPham" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhMucSanPhams">
+      <EntityTypeMapping TypeName="SonyModel.DanhMucSanPham">
+        <MappingFragment StoreEntitySet="DanhMucSanPham">
+          <ScalarProperty Name="IdDanhMucSanPham" ColumnName="IdDanhMucSanPham" />
+          <ScalarProperty Name="TenDanhMucSanPham" ColumnName="TenDanhMucSanPham" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonHangs">
+      <EntityTypeMapping TypeName="SonyModel.DonHang">
+        <MappingFragment StoreEntitySet="DonHang">
+          <ScalarProperty Name="IdDonHang" ColumnName="IdDonHang" />
+          <ScalarProperty Name="IdNguoiDung" ColumnName="IdNguoiDung" />
+          <ScalarProperty Name="IdTinhTrangDonHang" ColumnName="IdTinhTrangDonHang" />
+          <ScalarProperty Name="IdGiaoDich" ColumnName="IdGiaoDich" />
+          <ScalarProperty Name="NgayTaoDonHang" ColumnName="NgayTaoDonHang" />
+          <ScalarProperty Name="NgayXuLyDonHang" ColumnName="NgayXuLyDonHang" />
+          <ScalarProperty Name="TrackingNumber" ColumnName="TrackingNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GioHangs">
+      <EntityTypeMapping TypeName="SonyModel.GioHang">
+        <MappingFragment StoreEntitySet="GioHang">
+          <ScalarProperty Name="IdGioHang" ColumnName="IdGioHang" />
+          <ScalarProperty Name="CartGuid" ColumnName="CartGuid" />
+          <ScalarProperty Name="IdSanPham" ColumnName="IdSanPham" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="NgayTaoGioHang" ColumnName="NgayTaoGioHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HinhSanPhams">
+      <EntityTypeMapping TypeName="SonyModel.HinhSanPham">
+        <MappingFragment StoreEntitySet="HinhSanPham">
+          <ScalarProperty Name="IdHinhSanPham" ColumnName="IdHinhSanPham" />
+          <ScalarProperty Name="FileHinhSanPham" ColumnName="FileHinhSanPham" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KieuNguoiDungs">
+      <EntityTypeMapping TypeName="SonyModel.KieuNguoiDung">
+        <MappingFragment StoreEntitySet="KieuNguoiDung">
+          <ScalarProperty Name="IdKieuNguoiDung" ColumnName="IdKieuNguoiDung" />
+          <ScalarProperty Name="TenKieuNguoiDung" ColumnName="TenKieuNguoiDung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguoiDungs">
+      <EntityTypeMapping TypeName="SonyModel.NguoiDung">
+        <MappingFragment StoreEntitySet="NguoiDung">
+          <ScalarProperty Name="IdNguoiDung" ColumnName="IdNguoiDung" />
+          <ScalarProperty Name="IdKieuNguoiDung" ColumnName="IdKieuNguoiDung" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="SoFax" ColumnName="SoFax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MaDienThoai" ColumnName="MaDienThoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SanPhams">
+      <EntityTypeMapping TypeName="SonyModel.SanPham">
+        <MappingFragment StoreEntitySet="SanPham">
+          <ScalarProperty Name="IdSanPham" ColumnName="IdSanPham" />
+          <ScalarProperty Name="IdDanhMucSanPham" ColumnName="IdDanhMucSanPham" />
+          <ScalarProperty Name="IdHinhSanPham" ColumnName="IdHinhSanPham" />
+          <ScalarProperty Name="TenSanPham" ColumnName="TenSanPham" />
+          <ScalarProperty Name="MoTaSanPham" ColumnName="MoTaSanPham" />
+          <ScalarProperty Name="GiaSanPham" ColumnName="GiaSanPham" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinhTrangDonHangs">
+      <EntityTypeMapping TypeName="SonyModel.TinhTrangDonHang">
+        <MappingFragment StoreEntitySet="TinhTrangDonHang">
+          <ScalarProperty Name="IdTinhTrangDonHang" ColumnName="IdTinhTrangDonHang" />
+          <ScalarProperty Name="TenTinhTrangDonHang" ColumnName="TenTinhTrangDonHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

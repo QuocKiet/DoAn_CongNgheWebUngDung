@@ -1,0 +1,66 @@
+﻿@model KD.Models.DonHang
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DonHang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdNguoiDung)
+        </dt>
+
+        <dd class="mb-2">
+            @Html.DisplayFor(model => model.IdNguoiDung)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdTinhTrangDonHang)
+        </dt>
+
+        <dd class="mb-2">
+            @Html.DisplayFor(model => model.IdTinhTrangDonHang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdGiaoDich)
+        </dt>
+
+        <dd class="mb-2">
+            @Html.DisplayFor(model => model.IdGiaoDich)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayTaoDonHang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayTaoDonHang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayXuLyDonHang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayXuLyDonHang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrackingNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrackingNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdDonHang }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

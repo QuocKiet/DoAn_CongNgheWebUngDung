@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Example </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="~/SonyStyles/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="~/SonyStyles/1.js"></script>
+    <link rel="stylesheet" href="~/SonyStyles/vendor/bootstrap.css">
+    <link rel="stylesheet" href="~/SonyStyles/vendor/font-awesome.css">
+    <link rel="stylesheet" href="~/SonyStyles/1.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+</head>
+<body>
+    @Html.Partial("_NavPartial")
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+   @Html.Partial("_FooterPartial")
+   @Scripts.Render("~/bundles/jquery")
+   @Scripts.Render("~/bundles/bootstrap")
+   @RenderSection("scripts", required: false)
+</body>
+</html>

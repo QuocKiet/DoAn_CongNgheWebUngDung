@@ -1,0 +1,24 @@
+﻿@model List<KD.Models.SanPham>
+
+<div class="d-flex pt-2 row">
+    @foreach (var item in Model)
+    {
+        <div class="flex-fill col-sm-3">
+            <div class="product" style="text-align: center">
+                <div>
+                    <a href="@Url.Action("ChiTiet","SanPham",new {id=item.IdSanPham})">
+                        <img src="~/HinhSanPham/@item.HinhSanPham.FileHinhSanPham" style="height:200px;width: 200px">
+                    </a>
+                </div>
+                <hr>
+                <div class="text d-flex flex-column">
+                    <div>
+                        <h4><a href="@Url.Action("ChiTiet","SanPham",new {id=item.IdSanPham})" style="color:crimson">@item.TenSanPham</a></h4>
+                        <p class="price">Giá: @item.GiaSanPham.ToString("#,##00VNĐ")</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

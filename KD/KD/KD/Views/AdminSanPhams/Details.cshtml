@@ -1,0 +1,58 @@
+﻿@model KD.Models.SanPham
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SanPham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenSanPham)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSanPham)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoTaSanPham)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTaSanPham)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaSanPham)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaSanPham)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DanhMucSanPham.TenDanhMucSanPham)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DanhMucSanPham.TenDanhMucSanPham)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HinhSanPham.FileHinhSanPham)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HinhSanPham.FileHinhSanPham)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdSanPham }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,32 @@
+﻿@model KD.Models.SanPham
+@{
+    ViewBag.Title = "ChiTiet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="tenSpChiTiet">@Model.TenSanPham</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-4 imgSp">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">          
+                <div class="carousel-item active">
+                    <img src="~/HinhSanPham/@Model.HinhSanPham.FileHinhSanPham" alt="First slide" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 gia">
+            <h2 class="giaSp">@Model.GiaSanPham.ToString("#,##00 VNĐ")</h2>
+                <div class="khuyenmai">
+                    <p>Thong tin: @Model.MoTaSanPham</p>
+                </div>
+                <div class="mua">
+                    @Html.Partial("ChonMuaSanPham", @Model.IdSanPham)              
+                </div>
+        </div>
+    </div>
+
+</div>

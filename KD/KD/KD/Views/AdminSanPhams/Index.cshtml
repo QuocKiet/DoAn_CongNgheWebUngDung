@@ -1,0 +1,62 @@
+﻿@model IEnumerable<KD.Models.SanPham>
+
+@{
+                /**/
+
+                ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenSanPham)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoTaSanPham)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GiaSanPham)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DanhMucSanPham.TenDanhMucSanPham)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HinhSanPham.FileHinhSanPham)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.TenSanPham)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MoTaSanPham)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.GiaSanPham)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DanhMucSanPham.TenDanhMucSanPham)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.HinhSanPham.FileHinhSanPham)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.IdSanPham }) |
+        @Html.ActionLink("Details", "Details", new { id = item.IdSanPham }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.IdSanPham })
+    </td>
+</tr>
+}
+
+</table>

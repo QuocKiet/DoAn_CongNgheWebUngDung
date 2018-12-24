@@ -1,0 +1,44 @@
+﻿@model KD.Models.SanPham
+@using PagedList.Mvc;
+@using PagedList;
+
+@{
+    ViewBag.Title = "ListSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-3" id="contain">
+
+    <div class="row">
+        @foreach (var item in ViewBag.SanPhams as PagedList.IPagedList<KD.Models.SanPham>)
+        {
+            <div class="col-sm-3 pt-3" style="border-color: #bdbdbd">
+                <div class="product mb-2 " style="text-align: center;height:383px;">
+                    <div>
+                        <a href="@Url.Action("ChiTiet","SanPham",new {id=item.IdSanPham})">
+                            <img src="~/HinhSanPham/@item.HinhSanPham.FileHinhSanPham" style="height:200px;width: 200px">
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="text d-flex flex-column " style="text-align: center;">
+                        <div style="height:101px;">
+                            <h5 style="height:51px; vertical-align: middle;"><a href="@Url.Action("ChiTiet","SanPham",new {id=item.IdSanPham})" class="ml-2 pl-2">@item.TenSanPham</a></h5>
+                            <p class="price ml-2 pl-2 mt-0">Giá bán: @item.GiaSanPham.ToString("#,##00 VNĐ")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="p-2 pagination d-flex justify-content-center" id="infoBar">
+        @if (ViewBag.DanhMucSanPhamId != null)
+        {
+            @Html.PagedListPager((IPagedList)ViewBag.SanPhams, p => Url.Action("sanPhamTheoLoai", new { idL = ViewBag.DanhMucSanPhamId, page = p }))
+        }
+        else
+        {
+            @Html.PagedListPager((IPagedList)ViewBag.SanPhams, p => Url.Action("listSanPham", new { page = p }),
+                   PagedListRenderOptions.PageNumbersOnly)
+        }
+    </div>
+</div>
